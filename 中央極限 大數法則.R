@@ -1,11 +1,14 @@
-#╠`╨A╓ю╖G╙╨╓j╪ф╙k╚h
-#©О╗Зn╜с╪к╔╩╓╖╔╜╖║
+#Е╦╦Ф┘▀Е┬├Д╫┬Г └Е╓╖Ф∙╦ФЁ∙Е┴┤
+#И│╦Е▐√nЕ─▀Ф╗ёФ°╛Д╧▀Е╧ЁЕ²┤
+
+# For the LLN, center the X bar to mean zero
+
 sample_mean <- function(n=30){
   sum(rnorm(n))/n
 }
 
 
-#n╜с╪к╔╩ ╟╣i╕╦╗З╪к╙╨╛W╙╛╧о(╓j╪ф╙k╚h)
+#nЕ─▀Ф╗ёФ°╛ Е│ iФ╛║Е▐√Ф╗ёГ └Ф÷╠Г▀─Е°√(Е╓╖Ф∙╦ФЁ∙Е┴┤)
 LLN <- function(n,i=1000){
 normal=0
 for (x in 1:i){
@@ -22,7 +25,7 @@ LLN(100)
 LLN(1000)
 LLN(10000)
 
-#╚Э╪ф╓ю╔╛╙╨╓j╪ф╙k╚h
+#Ф▄┤Ф∙╦Е┬├Е╦┐Г └Е╓╖Ф∙╦ФЁ∙Е┴┤
 sample_mean_exp <- function(n=30){
   sum(rexp(n))/n
 }
@@ -38,7 +41,7 @@ LLN_exp(100)
 LLN_exp(1000)
 LLN_exp(10000)
 
-#╓╓╔║╥╔╜╜╘w╡z(╔H╚Э╪ф╗Г╪ф╥М╫d╗р)
+#Д╦╜Е╓╝Ф╔╣И≥░Е╝ Г░├(Д╩╔Ф▄┤Ф∙╦Е┤╫Ф∙╦Г∙╤Г╞└Д╬▀)
 
 clt_exp_normal <- function(n,i=1000){
   exp=0
@@ -54,7 +57,7 @@ clt_exp_normal <- function(n,i=1000){
 
 }
 
-#n╛O╘Б╪к╙╨╜сеИ╪ф i╛O╘Б╢X╕╦ ╗Б╨ь╓ю╟t╙╨╖н╙╛╥|юH╣шN╪W╔[╕сам╙Я
+#nФ≤╞Ф┼╫Ф╗ёГ └Е─▀И╚■Ф∙╦ iФ≤╞Ф┼╫Е╧╬Ф╛║ Е┘╘Г╗╝Е┬├И┘█Г └Е╫╒Г▀─Ф°┐И ╗Х▒≈NЕ╒·Е┼═Х─▄Х╤╗Х©▒
 clt_exp_normal(n=10,i=1000)
 clt_exp_normal(50)
 clt_exp_normal(100)
